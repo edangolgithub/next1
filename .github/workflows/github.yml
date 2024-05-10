@@ -22,7 +22,7 @@ jobs:
       run: ls -l 
     - name: Deploy
       env:
-         GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+         GITHUB_TOKEN: ${{secrets.GH_TOKEN}}
       uses: JamesIves/github-pages-deploy-action@4.1.0
       with:
         branch: gh-pages
